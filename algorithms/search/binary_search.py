@@ -1,8 +1,4 @@
-from typing import TypeVar
-
-T = TypeVar('T', int, str, float)
-
-def binary_search(arr: list[T], target: T) -> int:
+def binary_search(arr: list[int], target: int) -> int:
     low = 0
     high = len(arr) - 1
 
