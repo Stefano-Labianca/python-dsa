@@ -4,5 +4,5 @@
   "reportUnusedExcept": "warning",
   "reportUnusedClass": "warning",
   "reportUnusedFunction": "warning",
-  "reportPrivateImportUsage": "error"
+  "reportPrivateUsage": "error"
 }
