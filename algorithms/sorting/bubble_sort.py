@@ -1,4 +1,8 @@
-def bubble_sort(arr: list) -> list:
+from typing import TypeVar
+
+T = TypeVar('T', int, str, float)
+
+def bubble_sort(arr: list[T]) -> list[T]:
     swapping = True
     end = len(arr)
 
