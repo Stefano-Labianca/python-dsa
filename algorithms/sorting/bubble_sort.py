@@ -1,4 +1,4 @@
-def bubble_sort(arr: list[int]) -> list[int]:
+def bubble_sort(arr: list[int]):
     swapping = True
     end = len(arr)
 
@@ -12,4 +12,3 @@ def bubble_sort(arr: list[int]) -> list[int]:
 
         end -= 1
         
-    return arr
