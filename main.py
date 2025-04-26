@@ -1,15 +1,5 @@
-# from algorithms.sorting.insertion_sort import insertion_sort
-# from algorithms.sorting.merge_sort import merge_sort
-# from algorithms.sorting.bubble_sort import bubble_sort
+from data_structures.stack import Stack
 
-from algorithms.sorting.selection_sort import selection_sort
+stack = Stack[int]()
 
-arr = [9, 6, 2, 1, 8, 7]
-
-# bubble_sort(arr)
-# insertion_sort(arr)
-selection_sort(arr)
-# quick_sort(arr, 0, len(arr) - 1)
-
-
-print(arr)
+stack.push(1)
