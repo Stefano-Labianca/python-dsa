@@ -1,5 +1,12 @@
-from data_structures.stack import Stack
+from data_structures.bst import BSTNode
 
-stack = Stack[int]()
 
-stack.push(1)
+root = BSTNode(5)
+root.insert(3)
+root.insert(1)
+root.insert(7)
+root.insert(4)
+
+
+
+print(root.height())
