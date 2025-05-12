@@ -11,7 +11,7 @@ class HashMap:
         return sum % len(self.hashmap)
 
     def insert(self, key, value):
-        self.resize()
+        self.__resize()
         index = self.__key_to_index(key)
         original_index = index
         first_iteration = True
@@ -27,7 +27,7 @@ class HashMap:
 
         self.hashmap[index] = (key, value)
 
-    def resize(self):
+    def __resize(self):
         if len(self.hashmap) == 0:
             self.hashmap = [None]
             return
