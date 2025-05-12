@@ -23,8 +23,6 @@ class RBTree:
                 curr = curr.right
         return curr
     
-    # TODO: Remove operation
-
     def insert(self, val):
         new_node = RBNode(val)
         new_node.parent = None
