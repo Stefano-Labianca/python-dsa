@@ -1,12 +1,10 @@
-from data_structures.bst import BSTNode
+from data_structures.hashmap import HashMap
 
 
-root = BSTNode(5)
-root.insert(3)
-root.insert(1)
-root.insert(7)
-root.insert(4)
+table = HashMap(100)
+table.insert("One", 1)
+table.insert("Two", 2)
+table.insert("Three", 3)
 
-
-
-print(root.height())
+print(table.get("One"))
+print(table.get("Tww"))
