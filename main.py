@@ -1,10 +1,13 @@
-from data_structures.hashmap import HashMap
+from data_structures.trie import Trie
+
+trie = Trie()
+
+trie.add("apple")
+trie.add("application")
+trie.add("apply")
 
 
-table = HashMap(100)
-table.insert("One", 1)
-table.insert("Two", 2)
-table.insert("Three", 3)
+words = trie.words_with_prefix("app")
+print(words)
 
-print(table.get("One"))
-print(table.get("Tww"))
+print(trie.longest_common_prefix())
