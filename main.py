@@ -1,13 +1,9 @@
-from data_structures.trie import Trie
+from data_structures.graph import Graph
 
-trie = Trie()
+graph = Graph()
+graph.add_edge(0, 1)
+graph.add_edge(0, 2)
+graph.add_edge(1, 3)
+graph.add_edge(2, 3)
 
-trie.add("apple")
-trie.add("application")
-trie.add("apply")
-
-
-words = trie.words_with_prefix("app")
-print(words)
-
-print(trie.longest_common_prefix())
+print(graph)
