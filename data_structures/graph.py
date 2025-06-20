@@ -1,6 +1,27 @@
+from data_structures.queue import Queue
+
 class Graph:
     def __init__(self):
         self.graph = dict()
+
+    def breadth_first_search(self, v):
+        visited = [v]
+        queue = Queue()
+        queue.push(v)
+    
+        while not queue.is_empty():
+            node = queue.pop()
+
+            if node == None: break
+
+            neighboors = sorted(self.graph[node.val])
+
+            for n in neighboors:
+                if n not in visited:
+                    visited.append(n)
+                    queue.push(n)
+                    
+        return visited
 
     def add_edge(self, u, v):
         if u not in self.graph:
