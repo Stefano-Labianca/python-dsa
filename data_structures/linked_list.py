@@ -28,7 +28,8 @@ class LinkedList:
         if (self.head is None) and (self.tail is None):
             self.head = node
             self.tail = node
-
+            self.size += 1
+            
             return
         
         if self.tail is None: return
