@@ -4,6 +4,19 @@ class Graph:
     def __init__(self):
         self.graph = dict()
 
+    def depth_first_search(self, start_vertex):
+        return self.__depth_first_search_r([], start_vertex)
+
+    def __depth_first_search_r(self, visited, current_vertex):
+        visited.append(current_vertex)
+        neighboors = sorted(self.graph[current_vertex])
+
+        for v in neighboors:
+            if v not in visited:
+                visited = self.__depth_first_search_r(visited, v)
+
+        return visited
+
     def breadth_first_search(self, v):
         visited = [v]
         queue = Queue()
